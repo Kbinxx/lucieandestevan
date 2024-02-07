@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lucie & Estevan</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="./img/icone.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item w3-button">ACCUEIL</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-history"></i> HISTOIRE</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-bar-chart"></i> STATISTIQUES</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-picture-o"></i> PHOTOS</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+            <i class="fa fa-search"></i>
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">HISTOIRE</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">STATISTIQUES</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">PHOTOS</a>
+            <!--<a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
+        </div>
+        </div>
+
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">NOTRE <span class="w3-hide-small">M<b><a title="Lettres en gras = lettre d'un mot à trouver à la fin" onclick="bruhstop()">A</a></b>GNIFIQUE</span> COUPLE</span>
+        </div>
+        </div>
+
+        <!-- Container (About Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="about">
+            <h3 class="w3-center">HISTOIRE</h3>
+            <p class="w3-center"><em>I love u 💞</em></p>
+            <p>
+                Nous nous sommes rencontré il y a de ça, un an et 4 mois. J'ai donc vécu en effet 4/5 mois de pure galère étant donné que je suis tombé amoureux de toi dès ton arrivée dans ma vie. Lucie est la femme de ma vie je le sais et je le sens. Aujourd'hui, notre couple atteint alors les <b id="date"></b> !! C'est un laps de temps vraiment conséquent et plus le temps passe, plus je me rend compte de l'amour que je te porte Lucie. Nous avons vécu de nombreuses galères et nous nous sommes souvent embrouillé pour mieux se réconcillier et aprécier le temps à deux
+                <br>
+                - Estévan
+                
+            </p>
+            <div class="w3-row">
+                <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b><i class="fa fa-picture-o w3-margin-right"></i>Notre photo préférée</b></p><br>
+                <img src="./img/ph_pref.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+                </div>
+
+                <!-- Hide this text on small devices -->
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p>
+                    <b>B</b>ahhhhh alors si je m'y attendais à ça!! Tu es vraiment forte t'as trouvé ça! Je t'<b>a</b>i sous-estimé je pense... maintenant, on va voir si tu es doué++ et si arrives quand même à trouver <b>l</b>'entièreté de <b>l</b>'easter-egg eheheh ;)
+                    <br>
+                    En vrai ça m'a pris énormément de t<b>e</b>mps de faire le site eh oui j'en prend du temps pour toi hein... On est actuellement le 5 février et il faut encore je trouve <b>d</b>e quoi l'héberger et de quoi faire pl<b>e</b>ins d'autres choses parce que l'easter-egg est trèèèèès complexe... Non je rigole t'inquète pas ça va aller
+                    <br>
+                    <b>F</b>in si tu en es arrivée ici c'est que tu t'en es grave bien sorti et il ne te reste plus qu'une pet<b>i</b>te part de l'enigme. Vraiment je crois tu ne t'imagine pas le temps que j'ai pris pour mon<b>t</b>er tout ça, ça a été longgggg (une jour<b>n</b>ée) mais je t'aime. D'ailleurs, j'ai telleme<b>n</b>t bien développé le site que si on s'interess<b>e</b> à la partie <u>"Aujourd'hui notre couple atteint alor<b>s</b> les ... mois et ... jours"</u> s'actuali<b>s</b>e chaque jour!! C'est merveilleux l'informatique quand même
+                    <br>
+                    <u>J</u>e vais surement faire quelques modifs de temps en temps. <u>E</u>tre actif sur ce site sera une nouvelle tache pour mois. <u>T</u>u es vraiment inccroyable Lucie! <u>A</u>imer quelqu'un comme toi est un pur et simple bonheur :) <u>I</u>l n'y a vraiment pas de choses chez toi que je sur-deteste... <u>M</u>e prendre la tête par moment peut-être j'aime pas oui... <u>E</u>tre avec toi me réconforte
+                    <br>
+                    Reste dans ma vie à jamais 💞
+                </p>
+                </div>
+            </div>
+
+            <hr>
+            <!-- Second Parallax Image with Portfolio Text -->
+            <div class="bgimg-2 w3-display-container w3-opacity-min" id="portfolio">
+            <div class="w3-display-middle">
+                <span class="w3-xxlarge w3-text-white w3-wide">STATISTIQUES</span>
+            </div>
+            </div>
+
+            <!--
+                <div class="bgimg-3 w3-display-container w3-opacity-min" id="contact">
+            <div class="w3-display-middle">
+                <span class="w3-xxlarge w3-text-white w3-wide">PHOTOS</span>
+            </div>
+            </div>
+    
+            -->
+
+
+
+            <p class="w3-large w3-center w3-padding-16">Les compétences de Lucie:</p>
+            <p class="w3-wide"><i class="fa fa-heart-o"></i>Aimer Estévan</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">♾️</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-meh-o"></i>Bouder</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-thumbs-o-down"></i>Raler</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:50%">50%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-hashtag"></i>Culturée</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-mobile"></i>Réactivité sur téléphone</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:40%">40%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-snapchat-ghost"></i>Envoyer des snaps</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:10%">10%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-bed"></i>Dormir</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100%</div>
+            </div>
+            <hr>
+            <p class="w3-large w3-center w3-padding-16">Les compétences de Estévan:</p>
+            <p class="w3-wide"><i class="fa fa-heart-o"></i>Aimer Lucie</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">♾️</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-meh-o"></i>Bouder</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:55%">55%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-thumbs-o-down"></i>Raler</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-hashtag"></i>Culturée</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-mobile"></i>Réactivité sur téléphone</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-snapchat-ghost"></i>Envoyer des snaps</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-bed"></i>Dormir</p>
+            <div class="w3-light-grey">
+                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">3+</span><br>
+                Disputes 💢
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">2+</span><br>
+                Coups de pressions 😥
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">3640+</span><br>
+                Calins 🤗
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">364+</span><br>
+                Days of love 💌
+            </div>
+        </div>
+
+        
+        <hr>
+        <!-- Third Parallax Image with Portfolio Text -->
+        <div class="bgimg-3 w3-display-container w3-opacity-min" id="contact">
+            <div class="w3-display-middle">
+                <span class="w3-xxlarge w3-text-white w3-wide">PHOTOS</span>
+            </div>
+            </div>
+    
+            
+    
+            
+            </div>
+        <!-- Container (Portfolio Section) -->
+        <div class="w3-content w3-container w3-padding-64">
+        <p class="w3-center"><em>Vous trouverez ici quelques photos résumant notre relation<br> Pour appronfondir votre connaissance sur notre couple, il suffit de cliquer sur les images et de lire les descriptifs :)</em></p><br>
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center ">
+            <div class="w3-col m3">
+            <img src="./img/p0.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Il s'agit là de notre première photo à deux (1er Décembre 2022)... En cours d'anglais un petit BeReal que Lucie ne regarde pas 😂">
+            </div>
+
+            <div class="w3-col m3">
+            <img src="./img/p4.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Un petit selfie prit par Estévan après une bonne douche 🚿">
+            </div>
+
+            <div class="w3-col m3">
+            <img src="./img/p1.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Notre deuxième photo à deux!! C'était un BeReal. et on peut aussi appercevoir Tristan. Elle date donc du 9 Janvier 2023">
+            </div>
+
+            <div class="w3-col m3">
+            <img src="./img/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ici on nous retrouve en amoureux avec la famille proche de Lucie à Paris. C'était une petit visite d'exposition (on était à celle du Titanic) 🎫">
+            </div>
+
+            
+
+            
+        </div>
+
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+            <img src="./img/p5.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="On se retrouve en vacance avec Lucie. Avec sa petite famille en corrèze, il faisait très chaud d'où ma tenue 😂">
+            </div>
+
+            <div class="w3-col m3">
+            <img src="./img/p6.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="En soirée... 💃">
+            </div>
+
+            <div class="w3-col m3">
+            <img src="./img/p7.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="On était en train de s'endormir quand soudain on s'est apperçu de l'angle de vu de ma place dans le lit 🛏️">
+            </div>
+
+            <div class="w3-col m3">
+            <img src="./img/p8.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Une petite photo toute belle, malgrè mon oppération des dents de sagesses 🤫">
+            </div>
+
+            <div class="w3-col m3">
+            <img src="./img/p9.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Au bafa qu'est-ce qu'on s'est amusé... Cet représentation `Gloups` c'était vraiment drôle !! 🐟">
+            </div>
+
+            <div class="w3-col m3">
+            <img src="./img/p3.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="On retrouve la plus belle des fille, Lucie en train de découvrir ma famille. C'est aussi l'heure de la confection de confiture maison<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Eh non scroll encore ;) <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> Encore... <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> Un peu plus loin t'inquiète pas <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> Si tu as pas réussi à trouver, petit indice: mets ton téléphone en mode paysage quand tu navigues">
+            </div>
+
+            <div class="w3-col m3">
+            <img src="./img/p10.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Pour finir (ou pas) en beauté on se retrouve devant un petit bisou tout peau et tout frais aux expositions de Paris 🗼">
+            </div>
+
+            <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px" onclick="bruh()" id="bruh"><i class="fa fa-spinner w3-hover-opacity"></i>&nbsp; LOAD MORE</button>
+        </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+        </div>
+
+        
+
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Accueil</a>
+        <!--<div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>-->
+        <p>Made with &nbsp;<i class="fa fa-heart w3-hover-opacity"></i>&nbsp; by Estévan, ton amoureux 💞</p>
+        </footer>
+    </body>
+    <script>
+        var d1 = new Date(2023, 1, 16);
+        var d2 = new Date();
+        var dDiff = new Date(d2 - d1);
+        var txt = '';
+        txt += dDiff.getMonth();
+        txt += ' mois et ';
+        txt += (dDiff.getDate() - 1);
+        txt += ' jours';
+        document.getElementById("date").innerHTML = txt;
+    </script>
+</html>
