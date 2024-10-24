@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>Repas d'amour</title>
 <meta charset="UTF-8">
+<link rel="icon" href="./img/icone.jpg">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 .w3-bar-block .w3-bar-item {padding:20px}
+
+#mySidebar {display:none;z-index:2;width:20%;min-width:300px; background-image: url(img/back_repas.jpg);background-color: transparent; background-size: cover; background-repeat: no-repeat;
+}
+
+.w3-bar-item {
+    color: white;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+a {
+    text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  #mySidebar {
+    width: 100%;
+  }
+}
 </style>
 </head>
 <body>
 
 <!-- Sidebar (hidden by default) -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()"
-  class="w3-bar-item w3-button">Close Menu</a>
-  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+  class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-close"></i></a>
+  <a href="#random" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-none">Repas random</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-none">Catégories</a>
 </nav>
 
 <!-- Top menu -->
 <div class="w3-top">
   <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-    <div class="w3-right w3-padding-16">Mail</div>
-    <div class="w3-center w3-padding-16">My Food</div>
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()"><i class="fa fa-bars"></i></div>
+    <div class="w3-button w3-right w3-padding-16"><a href="index.html">On s'❤️</a></div>
+    <div class="w3-center w3-padding-16">Nos repas d'amour</div>
   </div>
 </div>
   
@@ -34,7 +53,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
 
   <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+  <div class="w3-row-padding w3-padding-16 w3-center" id="random">
+    <!--
     <div class="w3-quarter">
       <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
       <h3>The Perfect Sandwich, A Real NYC Classic</h3>
@@ -58,7 +78,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
     </div>
   </div>
   
-  <!-- Second Photo Grid-->
+    Second Photo Grid
   <div class="w3-row-padding w3-padding-16 w3-center">
     <div class="w3-quarter">
       <img src="/w3images/popsicle.jpg" alt="Popsicle" style="width:100%">
@@ -82,15 +102,27 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
     </div>
   </div>
 
-  <!-- Pagination -->
+   Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a onclick="etape_moins(0)" class="w3-bar-item w3-button w3-hover-black w3-hide etape1 btnsupprrr"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+      <a onclick="etape_moins(1)" class="w3-bar-item w3-button w3-hover-black w3-hide etape2 btnsupprrr" ><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+      <a onclick="etape_moins(2)" class="w3-bar-item w3-button w3-hover-black w3-hide etape3 btnsupprrr"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+      <a onclick="etape_moins(3)" class="w3-bar-item w3-button w3-hover-black w3-hide etape4 btnsupprrr"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+      <a onclick="etape_moins(4)" class="w3-bar-item w3-button w3-hover-black w3-hide etape5 btnsupprrr"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+      <a onclick="etape_moins(5)" class="w3-bar-item w3-button w3-hover-black w3-hide etape6 btnsupprrr"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+      <!--<a href="#" class="w3-bar-item w3-black w3-button">1</a>
       <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>-->
+      <a onclick="random_plat()" class="w3-bar-item w3-button w3-hover-black etape0 btnsupprrr">Tire au sort ton repas de la semaine !</a>
+      <a onclick="etape_plus(1)" class="w3-bar-item w3-button w3-hover-black etape0 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+      <a onclick="etape_plus(2)" class="w3-bar-item w3-button w3-hover-black w3-hide etape1 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+      <a onclick="etape_plus(3)" class="w3-bar-item w3-button w3-hover-black w3-hide etape2 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+      <a onclick="etape_plus(4)" class="w3-bar-item w3-button w3-hover-black w3-hide etape3 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+      <a onclick="etape_plus(5)" class="w3-bar-item w3-button w3-hover-black w3-hide etape4 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+      <a onclick="etape_plus(6)" class="w3-bar-item w3-button w3-hover-black w3-hide etape5 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+      
+
     </div>
   </div>
   
@@ -156,6 +188,137 @@ function w3_open() {
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
 }
+
+
+let liste_plat = [
+    "Hachis parmentier traditionnel", 
+    "Riz cantonais", 
+    "Chili con carné", 
+    "Soufflé au gruyère et chorizo", 
+    'Omelette aux pommes de terre', 
+    'Croquettes de thon', 
+    "Dahl de lentilles corail", 
+    "Tartiflette", 
+    "Chakchouka", 
+    "Salade de lentille au chèvre frais", 
+    "Wrap au poulet", 
+    "Pâtes bolognaises", 
+    "Riz poulet curry", 
+    "Fajitas"
+]
+var bdd = {
+    "Hachis parmentier traditionnel": {
+        img : 'https://H',
+        histoire : 'aaaaaaa', 
+        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
+    },
+    "Riz cantonais": {
+        img : 'https://B',
+        histoire : 'aaaaaaa', 
+        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
+    },
+    "Chili con carné": {
+        img : 'https://C',
+        histoire : 'aaaaaaa', 
+        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
+    },
+    "Soufflé au gruyère et chorizo": {
+        img : 'https://D',
+        histoire : 'aaaaaaa', 
+        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
+    },
+    'Omelette aux pommes de terre': {
+        img : 'https://E',
+        histoire : 'aaaaaaa', 
+        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
+    },
+    'Croquettes de thon': {
+        img : 'https://F',
+        histoire : 'aaaaaaa', 
+        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
+    }, 
+    "Dahl de lentilles corail": {
+        img : 'https://G',
+        histoire : 'aaaaaaa', 
+        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
+    }, 
+    "Tartiflette": {
+        img : 'https://I',
+        histoire : 'aaaaaaa', 
+        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
+    },
+    "Chakchouka": {
+        img : 'https://J',
+        histoire : 'aaaaaaa', 
+        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
+    }, 
+    "Salade de lentille au chèvre frais": {
+        img : 'https://K',
+        histoire : 'aaaaaaa', 
+        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
+    }, 
+    "Wrap au poulet": {
+        img : 'https://L',
+        histoire : 'aaaaaaa', 
+        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
+    }, 
+    "Pâtes bolognaises": {
+        img : 'https://M',
+        histoire : 'aaaaaaa', 
+        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
+    },
+    "Riz poulet curry": {
+        img : 'https://N',
+        histoire : 'aaaaaaa', 
+        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
+    }, 
+    "Fajitas": {
+        img : 'https://O',
+        histoire : 'aaaaaaa', 
+        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
+    }
+}
+
+let choix = ""
+
+function random_plat() {
+
+    let nb_plat = liste_plat.length;
+    alert(nb_plat);
+    let ind_plat_du_jour = Math.floor(Math.random() * nb_plat);
+    alert(ind_plat_du_jour);
+    let plat_du_jour = liste_plat[ind_plat_du_jour];
+    alert(plat_du_jour);
+    
+
+    return plat_du_jour;
+    let etape_actuelle = -1;
+}
+
+let img = bdd[choix]['img'];
+let histoire = bdd[choix]['histoire'];
+let etapes = bdd[choix]['etapes'];
+
+
+
+let etape1 = etape[0];
+let etape2 = etape[1];
+let etape3 = etape[2];
+let etape4 = etape[3];
+let etape5 = etape[4];
+
+
+
+
+function etape_plus(etape_a_laquelle_on_passe) {
+    let n_etape_suppression = etape_a_laquelle_on_passe-1;
+    let l_etape_suppression = ".etape"+n_etape_suppression.toString()
+    $(l_etape_suppression).addClass('w3-hide')
+    let n_etape_addition = etape_a_laquelle_on_passe
+    let l_etape_addition = ".etape"+n_etape_addition.toString()
+    $(l_etape_addition).removeClass('w3-hide')
+}
+
 </script>
 
 </body>
