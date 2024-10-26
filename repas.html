@@ -105,22 +105,22 @@ a {
    Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
-      <a onclick="etape_moins(0)" class="w3-bar-item w3-button w3-hover-black w3-hide etape1 btnsupprrr"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
-      <a onclick="etape_moins(1)" class="w3-bar-item w3-button w3-hover-black w3-hide etape2 btnsupprrr" ><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
-      <a onclick="etape_moins(2)" class="w3-bar-item w3-button w3-hover-black w3-hide etape3 btnsupprrr"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
-      <a onclick="etape_moins(3)" class="w3-bar-item w3-button w3-hover-black w3-hide etape4 btnsupprrr"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
-      <a onclick="etape_moins(4)" class="w3-bar-item w3-button w3-hover-black w3-hide etape5 btnsupprrr"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
-      <a onclick="etape_moins(5)" class="w3-bar-item w3-button w3-hover-black w3-hide etape6 btnsupprrr"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+      <a onclick="chgmt_etape(0)" class="w3-bar-item w3-button w3-hover-black w3-hide etape1 btnsupprrr"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+      <a onclick="chgmt_etape(1)" class="w3-bar-item w3-button w3-hover-black w3-hide etape2 btnsupprrr" ><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+      <a onclick="chgmt_etape(2)" class="w3-bar-item w3-button w3-hover-black w3-hide etape3 btnsupprrr"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+      <a onclick="chgmt_etape(3)" class="w3-bar-item w3-button w3-hover-black w3-hide etape4 btnsupprrr"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+      <a onclick="chgmt_etape(4)" class="w3-bar-item w3-button w3-hover-black w3-hide etape5 btnsupprrr"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+      <a onclick="chgmt_etape(5)" class="w3-bar-item w3-button w3-hover-black w3-hide etape6 btnsupprrr"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
       <!--<a href="#" class="w3-bar-item w3-black w3-button">1</a>
       <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
       <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>-->
       <a onclick="random_plat()" class="w3-bar-item w3-button w3-hover-black etape0 btnsupprrr">Tire au sort ton repas de la semaine !</a>
-      <a onclick="etape_plus(1)" class="w3-bar-item w3-button w3-hover-black etape0 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-      <a onclick="etape_plus(2)" class="w3-bar-item w3-button w3-hover-black w3-hide etape1 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-      <a onclick="etape_plus(3)" class="w3-bar-item w3-button w3-hover-black w3-hide etape2 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-      <a onclick="etape_plus(4)" class="w3-bar-item w3-button w3-hover-black w3-hide etape3 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-      <a onclick="etape_plus(5)" class="w3-bar-item w3-button w3-hover-black w3-hide etape4 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-      <a onclick="etape_plus(6)" class="w3-bar-item w3-button w3-hover-black w3-hide etape5 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+      <a onclick="chgmt_etape(1)" class="w3-bar-item w3-button w3-hover-black etape0 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+      <a onclick="chgmt_etape(2)" class="w3-bar-item w3-button w3-hover-black w3-hide etape1 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+      <a onclick="chgmt_etape(3)" class="w3-bar-item w3-button w3-hover-black w3-hide etape2 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+      <a onclick="chgmt_etape(4)" class="w3-bar-item w3-button w3-hover-black w3-hide etape3 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+      <a onclick="chgmt_etape(5)" class="w3-bar-item w3-button w3-hover-black w3-hide etape4 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+      <a onclick="chgmt_etape(6)" class="w3-bar-item w3-button w3-hover-black w3-hide etape5 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
       
 
     </div>
@@ -289,10 +289,7 @@ function random_plat() {
     alert(ind_plat_du_jour);
     let plat_du_jour = liste_plat[ind_plat_du_jour];
     alert(plat_du_jour);
-    
 
-    return plat_du_jour;
-    let etape_actuelle = -1;
 }
 
 let img = bdd[choix]['img'];
@@ -310,13 +307,15 @@ let etape5 = etape[4];
 
 
 
-function etape_plus(etape_a_laquelle_on_passe) {
-    let n_etape_suppression = etape_a_laquelle_on_passe-1;
-    let l_etape_suppression = ".etape"+n_etape_suppression.toString()
-    $(l_etape_suppression).addClass('w3-hide')
-    let n_etape_addition = etape_a_laquelle_on_passe
-    let l_etape_addition = ".etape"+n_etape_addition.toString()
-    $(l_etape_addition).removeClass('w3-hide')
+function chgmt_etape(etape_a_laquelle_on_passe) {
+  const all_element = document.querySelectorAll('.btnsupprrr');
+  all_element.forEach(element => {
+    element.classList.add('w3-hide');
+  });
+  const elementToShow = document.querySelectorAll(".etape"+etape_a_laquelle_on_passe);
+  elementToShow.forEach(element => {
+    element.classList.remove('w3-hide');
+  });
 }
 
 </script>
