@@ -15,17 +15,62 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 
 #mySidebar {display:none;z-index:2;width:20%;min-width:300px; background-image: url(img/back_repas.jpg);background-color: transparent; background-size: cover; background-repeat: no-repeat;
 }
+#random {
+  width: 100%; 
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 1.5s infinite;
+}
+
 
 .w3-bar-item {
     color: white;
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+.first_div {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.second_div {
+  background-color: blue; 
+  width: 75%;
+}
+
 a {
     text-decoration: none;
 }
 @media only screen and (max-width: 600px) {
   #mySidebar {
     width: 100%;
+  }
+  #random {
+    height: 400px;
+    flex-direction: column;
+    justify-self: unset;
+  }
+  .first_div {
+    width: 100%;
+    height: 200px;
+  }
+  .second_div {
+    width: 100%;
+    height: 200px;
   }
 }
 </style>
@@ -54,6 +99,18 @@ a {
 
   <!-- First Photo Grid-->
   <div class="w3-row-padding w3-padding-16 w3-center" id="random">
+    <div class='first_div'>
+      <img id='imaaaage' src="./img/image-removebg-preview.png">
+
+    </div>
+    <div class="second_div">
+      <h1 id="titre">
+        Random Plat
+      </h1>
+      <p id="etape">
+        Appuie sur le bouton juste en dessous pour générer le plat random de la semaine / du jour !
+      </p>
+    </div>
     <!--
     <div class="w3-quarter">
       <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
@@ -75,9 +132,9 @@ a {
       <img src="/w3images/wine.jpg" alt="Pasta and Wine" style="width:100%">
       <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
       <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-    </div>
+    </div>-->
   </div>
-  
+  <!--
     Second Photo Grid
   <div class="w3-row-padding w3-padding-16 w3-center">
     <div class="w3-quarter">
@@ -104,7 +161,7 @@ a {
 
    Pagination -->
   <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
+    <div class="w3-bar" style="display: flex; justify-content: space-evenly;">
       <a onclick="chgmt_etape(0)" class="w3-bar-item w3-button w3-hover-black w3-hide etape1 btnsupprrr"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
       <a onclick="chgmt_etape(1)" class="w3-bar-item w3-button w3-hover-black w3-hide etape2 btnsupprrr" ><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
       <a onclick="chgmt_etape(2)" class="w3-bar-item w3-button w3-hover-black w3-hide etape3 btnsupprrr"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
@@ -208,37 +265,37 @@ let liste_plat = [
 ]
 var bdd = {
     "Hachis parmentier traditionnel": {
-        img : 'https://H',
+        img : './img/hachis_parmentier.png',
         histoire : 'aaaaaaa', 
         etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
     },
     "Riz cantonais": {
-        img : 'https://B',
+        img : './img/riz_cantonais.png',
         histoire : 'aaaaaaa', 
         etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
     },
     "Chili con carné": {
-        img : 'https://C',
+        img : './img/chili_con_carne.png',
         histoire : 'aaaaaaa', 
         etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
     },
     "Soufflé au gruyère et chorizo": {
-        img : 'https://D',
+        img : './img/suflé_gruyère_chorizo.png',
         histoire : 'aaaaaaa', 
         etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
     },
     'Omelette aux pommes de terre': {
-        img : 'https://E',
+        img : './img/omelette_pommes_de_terre.png',
         histoire : 'aaaaaaa', 
         etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
     },
     'Croquettes de thon': {
-        img : 'https://F',
+        img : './img/croquette_de_thon.png',
         histoire : 'aaaaaaa', 
         etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
     }, 
     "Dahl de lentilles corail": {
-        img : 'https://G',
+        img : '/img/Dahl_de_lentilles_corail.png',
         histoire : 'aaaaaaa', 
         etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
     }, 
@@ -282,19 +339,23 @@ var bdd = {
 let choix = ""
 
 function random_plat() {
+  /** On choisit d'abord un plat random dans tout ceux qui nous sont proposés **/
+  let nb_plat = liste_plat.length;
+  /**alert(nb_plat);**/
+  let ind_plat_du_jour = Math.floor(Math.random() * nb_plat);
+  /**alert(ind_plat_du_jour);**/
+  let plat_du_jour = liste_plat[ind_plat_du_jour];
+  /**alert(plat_du_jour);**/
 
-    let nb_plat = liste_plat.length;
-    alert(nb_plat);
-    let ind_plat_du_jour = Math.floor(Math.random() * nb_plat);
-    alert(ind_plat_du_jour);
-    let plat_du_jour = liste_plat[ind_plat_du_jour];
-    alert(plat_du_jour);
+  /** On modifie tous les élements (étape, image, titre)**/
+  let img = bdd[plat_du_jour]['img'];
+  let histoire = bdd[plat_du_jour]['histoire'];
+  let etapes = bdd[plat_du_jour]['etapes'];
 
+  let imaage = document.getElementById("imaaaage")
+  imaage.src = img;
 }
 
-let img = bdd[choix]['img'];
-let histoire = bdd[choix]['histoire'];
-let etapes = bdd[choix]['etapes'];
 
 
 
