@@ -21,9 +21,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
-  -webkit-mask-size: 200%;
-  animation: shine 1.5s infinite;
 }
 
 
@@ -31,6 +28,20 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
     color: white;
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
+
+.first_div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brillant {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 1.5s infinite;
+}
+
 
 @-webkit-keyframes shine {
   from {
@@ -41,15 +52,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   }
 }
 
-.first_div {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 .second_div {
   background-color: blue; 
-  width: 75%;
+  width: 50%;
 }
 
 a {
@@ -60,7 +65,7 @@ a {
     width: 100%;
   }
   #random {
-    height: 400px;
+    height: 450px;
     flex-direction: column;
     justify-self: unset;
   }
@@ -70,7 +75,7 @@ a {
   }
   .second_div {
     width: 100%;
-    height: 200px;
+    height: 250px;
   }
 }
 </style>
@@ -81,7 +86,7 @@ a {
 <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()"
   class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-close"></i></a>
-  <a href="#random" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-none">Repas random</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-none">Repas random</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-none">Catégories</a>
 </nav>
 
@@ -99,8 +104,8 @@ a {
 
   <!-- First Photo Grid-->
   <div class="w3-row-padding w3-padding-16 w3-center" id="random">
-    <div class='first_div'>
-      <img id='imaaaage' src="./img/image-removebg-preview.png">
+    <div id="brillance" class='first_div brillant'>
+      <img id='imaaaage' src="./img/image-removebg-preview.png" width="100%" height="100%">
 
     </div>
     <div class="second_div">
@@ -172,7 +177,7 @@ a {
       <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
       <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>-->
       <a onclick="random_plat()" class="w3-bar-item w3-button w3-hover-black etape0 btnsupprrr">Tire au sort ton repas de la semaine !</a>
-      <a onclick="chgmt_etape(1)" class="w3-bar-item w3-button w3-hover-black etape0 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+      <a onclick="chgmt_etape(1)" id="casse_la_tete" class="w3-bar-item w3-button w3-hover-black w3-hide etape0 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
       <a onclick="chgmt_etape(2)" class="w3-bar-item w3-button w3-hover-black w3-hide etape1 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
       <a onclick="chgmt_etape(3)" class="w3-bar-item w3-button w3-hover-black w3-hide etape2 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
       <a onclick="chgmt_etape(4)" class="w3-bar-item w3-button w3-hover-black w3-hide etape3 btnsupprrr"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
@@ -188,7 +193,7 @@ a {
   <!-- About Section -->
   <div class="w3-container w3-padding-32 w3-center">  
     <h3>About Me, The Food Man</h3><br>
-    <img src="/w3images/chef.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <img src="" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
     <div class="w3-padding-32">
       <h4><b>I am Who I Am!</b></h4>
       <h6><i>With Passion For Real, Good Food</i></h6>
@@ -209,12 +214,12 @@ a {
       <h3>BLOG POSTS</h3>
       <ul class="w3-ul w3-hoverable">
         <li class="w3-padding-16">
-          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <img src="" class="w3-left w3-margin-right" style="width:50px">
           <span class="w3-large">Lorem</span><br>
           <span>Sed mattis nunc</span>
         </li>
         <li class="w3-padding-16">
-          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <img src="" class="w3-left w3-margin-right" style="width:50px">
           <span class="w3-large">Ipsum</span><br>
           <span>Praes tinci sed</span>
         </li> 
@@ -280,7 +285,7 @@ var bdd = {
         etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
     },
     "Soufflé au gruyère et chorizo": {
-        img : './img/suflé_gruyère_chorizo.png',
+        img : './img/soufle_gruyere_chorizo.png',
         histoire : 'aaaaaaa', 
         etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
     },
@@ -295,42 +300,42 @@ var bdd = {
         etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
     }, 
     "Dahl de lentilles corail": {
-        img : '/img/Dahl_de_lentilles_corail.png',
+        img : './img/Dahl_de_lentilles_corail.png',
         histoire : 'aaaaaaa', 
         etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
     }, 
     "Tartiflette": {
-        img : 'https://I',
+        img : './img/tartiflette.png',
         histoire : 'aaaaaaa', 
         etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
     },
     "Chakchouka": {
-        img : 'https://J',
+        img : './img/chakchouka.png',
         histoire : 'aaaaaaa', 
         etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
     }, 
     "Salade de lentille au chèvre frais": {
-        img : 'https://K',
+        img : './img/salade_lentille_chevre_frais.png',
         histoire : 'aaaaaaa', 
         etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
     }, 
     "Wrap au poulet": {
-        img : 'https://L',
+        img : './img/wrap_poulet.png',
         histoire : 'aaaaaaa', 
         etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
     }, 
     "Pâtes bolognaises": {
-        img : 'https://M',
+        img : './img/pate_bolo.png',
         histoire : 'aaaaaaa', 
         etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
     },
     "Riz poulet curry": {
-        img : 'https://N',
+        img : './img/riz_curry.png',
         histoire : 'aaaaaaa', 
         etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
     }, 
     "Fajitas": {
-        img : 'https://O',
+        img : './img/fajitas.png',
         histoire : 'aaaaaaa', 
         etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
     }
@@ -339,6 +344,8 @@ var bdd = {
 let choix = ""
 
 function random_plat() {
+  let fleche_apparition = document.getElementById('casse_la_tete');
+  fleche_apparition.classList.remove('w3-hide')
   /** On choisit d'abord un plat random dans tout ceux qui nous sont proposés **/
   let nb_plat = liste_plat.length;
   /**alert(nb_plat);**/
@@ -352,8 +359,14 @@ function random_plat() {
   let histoire = bdd[plat_du_jour]['histoire'];
   let etapes = bdd[plat_du_jour]['etapes'];
 
-  let imaage = document.getElementById("imaaaage")
+  let imaage = document.getElementById("imaaaage");
+  let brillle = document.getElementById('brillance');
+  brillle.classList.remove('brillant');
   imaage.src = img;
+  let titre = document.getElementById('titre');
+  titre.innerHTML = plat_du_jour;
+  let etape = document.getElementById('etape');
+  etape.innerHTML = histoire
 }
 
 
@@ -369,6 +382,15 @@ let etape5 = etape[4];
 
 
 function chgmt_etape(etape_a_laquelle_on_passe) {
+  var recette = document.getElementById('titre').textContent;
+  var etape = document.getElementById('etape');
+  if (etape_a_laquelle_on_passe - 1 < 0) {
+    var txt_etape = bdd[recette]['histoire'];
+    etape.innerHTML = txt_etape;
+  } else {
+    var txt_etape = bdd[recette]['etapes'][etape_a_laquelle_on_passe-1];
+    etape.innerHTML = txt_etape;
+  }
   const all_element = document.querySelectorAll('.btnsupprrr');
   all_element.forEach(element => {
     element.classList.add('w3-hide');
