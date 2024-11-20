@@ -8,77 +8,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
-.w3-bar-block .w3-bar-item {padding:20px}
-
-#mySidebar {display:none;z-index:2;width:20%;min-width:300px; background-image: url(img/back_repas.jpg);background-color: transparent; background-size: cover; background-repeat: no-repeat;
-}
-#random {
-  width: 100%; 
-  height: 500px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-
-.w3-bar-item {
-    color: white;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-}
-
-.first_div {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.brillant {
-  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
-  -webkit-mask-size: 200%;
-  animation: shine 1.5s infinite;
-}
-
-
-@-webkit-keyframes shine {
-  from {
-    -webkit-mask-position: 150%;
-  }
-  to {
-    -webkit-mask-position: -50%;
-  }
-}
-
-.second_div {
-  background-color: blue; 
-  width: 50%;
-}
-
-a {
-    text-decoration: none;
-}
-@media only screen and (max-width: 600px) {
-  #mySidebar {
-    width: 100%;
-  }
-  #random {
-    height: 450px;
-    flex-direction: column;
-    justify-self: unset;
-  }
-  .first_div {
-    width: 100%;
-    height: 200px;
-  }
-  .second_div {
-    width: 100%;
-    height: 250px;
-  }
-}
-</style>
+<link rel="stylesheet" href="./repas/style.css">
+<script src="./repas/script.js"></script>
 </head>
 <body>
 
@@ -100,7 +31,7 @@ a {
 </div>
   
 <!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+<div class="w3-main w3-content" style="max-width: 1200PX ;margin-top:100px">
 
   <!-- First Photo Grid-->
   <div class="w3-row-padding w3-padding-16 w3-center" id="random">
@@ -165,7 +96,7 @@ a {
   </div>
 
    Pagination -->
-  <div class="w3-center w3-padding-32">
+  <div class="w3-center w3-padding-32" id="about">
     <div class="w3-bar" style="display: flex; justify-content: space-evenly;">
       <a onclick="chgmt_etape(0)" class="w3-bar-item w3-button w3-hover-black w3-hide etape1 btnsupprrr"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
       <a onclick="chgmt_etape(1)" class="w3-bar-item w3-button w3-hover-black w3-hide etape2 btnsupprrr" ><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
@@ -187,23 +118,46 @@ a {
 
     </div>
   </div>
-  
-  <hr id="about">
+  <hr>
 
   <!-- About Section -->
-  <div class="w3-container w3-padding-32 w3-center">  
-    <h3>About Me, The Food Man</h3><br>
+  <div class="w3-container w3-center" style="padding-top: 16px;">  
+    <h3>A propos de moi</h3><br>
     <img src="" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
-    <div class="w3-padding-32">
-      <h4><b>I am Who I Am!</b></h4>
+    <div>
+      <h4><b>Hyper narcicique comme intro hein?</b></h4>
       <h6><i>With Passion For Real, Good Food</i></h6>
-      <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>EHEHEH je sais ça fait grâve pro ! Nan en vrai tout ça pour dire que tu dois prendre du temps pour toi et pour cuisiner, j'adore cuisiner mais j'espère que ce que je fais là ça te servira pour plus tard, que tu prennes le temps de faire des petites recettes... Pour l'instant j'ai fait ce principe pour répondre à tes "on mange quoi cette semaine", comme ça on clique et hop... Je pourrais faire d'autres fonctionnalités à ta demaine biensûr ! <br> Quelques idées que j'avais eu :</p>
+      <ul style="padding-right: 15%;">
+        <li>
+          Faire une sorte de "liste à acheter" quand tu séléctionnes un repas. L'avantage c'est que du coup tu peux choisir plusieurs repas, et voir ta liste de course finale
+        </li>
+        <li>
+          Faire un "j'ai ... et ... dans mon frigo, quel plat bon je peux faire ?"
+        </li>
+      </ul>
+      <p>
+        Mais tu t'en doutes, je devais me focus sur UN objectif parce qu'on vie une année assez difficile quand même et jusqu'à maintenant rien que ce que j'ai déjà fait est le plus gros site que j'ai jamais fait mdrrrr
+      </p>
     </div>
   </div>
   <hr>
-  
+</div>
   <!-- Footer -->
-  <footer class="w3-row-padding w3-padding-32">
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#mySidebar" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Accueil</a>
+    <!--<div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>-->
+    <p>Made with &nbsp;<i class="fa fa-heart w3-hover-opacity"></i>&nbsp; by Estévan, ton amoureux 💞</p>
+    </footer>
+  <!-- Footer -->
+  <!--<footer class="w3-row-padding w3-padding-32">
     <div class="w3-third">
       <h3>FOOTER</h3>
       <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
@@ -236,172 +190,11 @@ a {
         <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
       </p>
     </div>
-  </footer>
+  </footer>-->
 
 <!-- End page content -->
-</div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
 
 
-let liste_plat = [
-    "Hachis parmentier traditionnel", 
-    "Riz cantonais", 
-    "Chili con carné", 
-    "Soufflé au gruyère et chorizo", 
-    'Omelette aux pommes de terre', 
-    'Croquettes de thon', 
-    "Dahl de lentilles corail", 
-    "Tartiflette", 
-    "Chakchouka", 
-    "Salade de lentille au chèvre frais", 
-    "Wrap au poulet", 
-    "Pâtes bolognaises", 
-    "Riz poulet curry", 
-    "Fajitas"
-]
-var bdd = {
-    "Hachis parmentier traditionnel": {
-        img : './img/hachis_parmentier.png',
-        histoire : 'aaaaaaa', 
-        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
-    },
-    "Riz cantonais": {
-        img : './img/riz_cantonais.png',
-        histoire : 'aaaaaaa', 
-        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
-    },
-    "Chili con carné": {
-        img : './img/chili_con_carne.png',
-        histoire : 'aaaaaaa', 
-        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
-    },
-    "Soufflé au gruyère et chorizo": {
-        img : './img/soufle_gruyere_chorizo.png',
-        histoire : 'aaaaaaa', 
-        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
-    },
-    'Omelette aux pommes de terre': {
-        img : './img/omelette_pommes_de_terre.png',
-        histoire : 'aaaaaaa', 
-        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
-    },
-    'Croquettes de thon': {
-        img : './img/croquette_de_thon.png',
-        histoire : 'aaaaaaa', 
-        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
-    }, 
-    "Dahl de lentilles corail": {
-        img : './img/Dahl_de_lentilles_corail.png',
-        histoire : 'aaaaaaa', 
-        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
-    }, 
-    "Tartiflette": {
-        img : './img/tartiflette.png',
-        histoire : 'aaaaaaa', 
-        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
-    },
-    "Chakchouka": {
-        img : './img/chakchouka.png',
-        histoire : 'aaaaaaa', 
-        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
-    }, 
-    "Salade de lentille au chèvre frais": {
-        img : './img/salade_lentille_chevre_frais.png',
-        histoire : 'aaaaaaa', 
-        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
-    }, 
-    "Wrap au poulet": {
-        img : './img/wrap_poulet.png',
-        histoire : 'aaaaaaa', 
-        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
-    }, 
-    "Pâtes bolognaises": {
-        img : './img/pate_bolo.png',
-        histoire : 'aaaaaaa', 
-        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
-    },
-    "Riz poulet curry": {
-        img : './img/riz_curry.png',
-        histoire : 'aaaaaaa', 
-        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
-    }, 
-    "Fajitas": {
-        img : './img/fajitas.png',
-        histoire : 'aaaaaaa', 
-        etapes : ["étape 1 : ", "étape 2 : ", "étape 3 : ", "étape 4 : ", "étape 5 : ",]
-    }
-}
-
-let choix = ""
-
-function random_plat() {
-  let fleche_apparition = document.getElementById('casse_la_tete');
-  fleche_apparition.classList.remove('w3-hide')
-  /** On choisit d'abord un plat random dans tout ceux qui nous sont proposés **/
-  let nb_plat = liste_plat.length;
-  /**alert(nb_plat);**/
-  let ind_plat_du_jour = Math.floor(Math.random() * nb_plat);
-  /**alert(ind_plat_du_jour);**/
-  let plat_du_jour = liste_plat[ind_plat_du_jour];
-  /**alert(plat_du_jour);**/
-
-  /** On modifie tous les élements (étape, image, titre)**/
-  let img = bdd[plat_du_jour]['img'];
-  let histoire = bdd[plat_du_jour]['histoire'];
-  let etapes = bdd[plat_du_jour]['etapes'];
-
-  let imaage = document.getElementById("imaaaage");
-  let brillle = document.getElementById('brillance');
-  brillle.classList.remove('brillant');
-  imaage.src = img;
-  let titre = document.getElementById('titre');
-  titre.innerHTML = plat_du_jour;
-  let etape = document.getElementById('etape');
-  etape.innerHTML = histoire
-}
-
-
-
-
-let etape1 = etape[0];
-let etape2 = etape[1];
-let etape3 = etape[2];
-let etape4 = etape[3];
-let etape5 = etape[4];
-
-
-
-
-function chgmt_etape(etape_a_laquelle_on_passe) {
-  var recette = document.getElementById('titre').textContent;
-  var etape = document.getElementById('etape');
-  if (etape_a_laquelle_on_passe - 1 < 0) {
-    var txt_etape = bdd[recette]['histoire'];
-    etape.innerHTML = txt_etape;
-  } else {
-    var txt_etape = bdd[recette]['etapes'][etape_a_laquelle_on_passe-1];
-    etape.innerHTML = txt_etape;
-  }
-  const all_element = document.querySelectorAll('.btnsupprrr');
-  all_element.forEach(element => {
-    element.classList.add('w3-hide');
-  });
-  const elementToShow = document.querySelectorAll(".etape"+etape_a_laquelle_on_passe);
-  elementToShow.forEach(element => {
-    element.classList.remove('w3-hide');
-  });
-}
-
-</script>
 
 </body>
 </html>
