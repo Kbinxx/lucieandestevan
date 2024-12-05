@@ -11,6 +11,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   justify-content: space-evenly;
 }
 
+#etape {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+#titre {
+  font-size: x-large;
+}
+
 
 .w3-bar-item {
     color: white;
