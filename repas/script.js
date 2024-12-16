@@ -34,77 +34,79 @@ var bdd = {
         img : './img/hachis_parmentier.png',
         histoire : "Ahhhh le Hachis, c'est bon un petit hachis hein ! Bon allez on s'attaque à la recête ! ", 
         etapes : [
-            "étape 1 : ", 
-            "étape 2 : ", 
-            "étape 3 : ", 
-            "étape 4 : ", 
-            "étape 5 : ",
+            "Peler et couper les pommes de terre en gros morceaux puis les faire cuire 20 minutes dans une casserole d'eau bouillante salée.",
+            "Pendant ce temps, éplucher et découper la carotte en morceaux. Peler l'oignon et l'ail, émincer l'oignon et couper la gousse d'ail en deux. Effeuiller les branches de thym. Faire chauffer le lait dans une petite casserole.",
+            "Egoutter et écraser les pommes de terre en purée. Ajouter le lait chaud en remuant et 30g de beurre, saler, poivrer et mélanger.",
+            "Préchauffer le four à 180°C. Mixer le thym, le persil, la carotte, l'ail et l'oignon. Faire revenir le tout dans une sauteuse avec le beurre restant pendant 3 minutes. Ajouter la viande hachée, saler, poivrer et laisser cuire 3 minutes.",
+            "Verser 10cl d'eau et le cube de bouillon de boeuf dans la sauteuse. Cuire encore 12 minutes en remuant régulièrement.",
+            "Répartir la viande dans un plat allant au four puis ajouter la purée par-dessus. Enfourner pour 20 minutes. Déguster chaud ", 
         ]
     },
     "Riz cantonais": {
         img : './img/riz_cantonais.png',
         histoire : "Un p'tit riz cantonnais façon estevaninou? C'est partiiiiii", 
         etapes : [
-            "étape 1 : ", 
-            "étape 2 : ", 
-            "étape 3 : ", 
-            "étape 4 : ", 
-            "étape 5 : ",
+            "Préparer une casserole avec un fond d'huile. Casser 2 oeufs dans un bol et remuer avec une fourchette", 
+            "Ajouter le riz dans la casserole, mettre le feu le plus fort possible et faire revenir le riz dans la casserole jusqu'à ce que certains grains deviennent blanc.", 
+            "Mettre 2 fois le volume de riz en eau dans la casserole, puis couvrir. Mettre un peu d'huile dans une grande poelle et faire chauffer les oeufs et casser en même temps l'omelette en pleins de petits morceaux", 
+            "Arrêter le feu de la casserole mais laisser dessus. Ajouter dans la poelle du bacon coupé en lamelles, le faire revenir puis ajouter les petits poids après les avoirs égoutés", 
+            "Normalement tout est presque bon, il ne te reste plus qu'à mettre directement le riz (que tu ne dois donc pas égouter) dans la poelle",
         ]
     },
     "Chili con carné": {
         img : './img/chili_con_carne.png',
         histoire : "Le chili con carné ! Quel classique mais comment j'ai jamais pris le temps d'en faire, j'attend de voir ce que tu peux me faire de bien bon :)", 
         etapes : [
-            "étape 1 : ", 
-            "étape 2 : ", 
-            "étape 3 : ", 
-            "étape 4 : ", 
-            "étape 5 : ",
+            "Préchauffer le four à 180°C (thermostat 6).", 
+            "Hacher l'oignon et l'ail.",
+            "Dans une cocotte en fonte, faire fondre le beurre, et ensuite dorer doucement l'oignon et l'ail.", 
+            "Incorporer le boeuf haché et laisser cuire doucement 10 min.", 
+            "Mélanger le chili, le cumin, le concentré de tomates, et incorporer le tout au boeuf. Ajouter les haricots, le bouillon, du sel et du poivre.",
+            "Couvrir et cuire 25 min au four."
         ]
     },
     "Soufflé au gruyère et chorizo": {
         img : './img/soufle_gruyere_chorizo.png',
         histoire : "Ahahah un p'tit nouveau, il m'intrigue beaucoup et il serait le bienvenu tu ne pense pas ?", 
         etapes : [
-            "étape 1 : ", 
-            "étape 2 : ", 
-            "étape 3 : ", 
-            "étape 4 : ", 
-            "étape 5 : ",
+            "Émincez le chorizo en fines lamelles. Portez le lait à ébullition avec une pointe de sel puis réservez. Cassez les oeufs et séparez les blancs des jaunes.", 
+            "Faites fondre le beurre dans une grande casserole, ajoutez la maizena et faites cuire pendant 2 min environ en mélangeant jusqu'à ce que le mélange commence tout juste à jaunir. Versez alors doucement le lait en fouettant vigoureusement et faites cuire, en mélangeant toujours au fouet jusqu'à ce que le mélange épaississe. Puis retirez du feu et incorporez, un à un, les jaunes d'oeufs; ajoutez le chorizo et réservez à chaleur ambiante.", 
+            "Préchauffez le four th.6 (180°c).", 
+            "Montez les blancs en neige très ferme avec une pointe de sel puis incorporez-les délicatement au mélange au Chorizo.", 
+            "Farinez le fond et les parois des ramequins individuels jusqu'à l'extrême bord, remplissez-les de l'appareil à soufflé jusqu'aux bords puis enfournez pour 15 min de cuisson sans ouvrir le four. Servez aussitôt",
         ]
     },
     'Omelette aux pommes de terre': {
         img : './img/omelette_pommes_de_terre.png',
         histoire : "Je sais que tu n'aimes pas les oeufs sauf ceux de ta mère mais pourquoi pas tenter quelque chose de nouveua éhéh?", 
         etapes : [
-            "étape 1 : ", 
-            "étape 2 : ", 
-            "étape 3 : ", 
-            "étape 4 : ", 
-            "étape 5 : ",
+            "Elle arrive plus tard", 
+            "Oui bon je sais que tu en rêves mais plus tard j'ai dis !", 
+            "Punaise je savais pas t'étais autant à fond x)", 
+            "Tu forces la mdrrr", 
+            "NOONNNN",
         ]
     },
     'Croquettes de thon': {
         img : './img/croquette_de_thon.png',
         histoire : "Alors l'image donne pas tant envie que ça c'est vrai mais bon, j'espère que la recette et le goût de cet essaie culinaire te plaira !!", 
         etapes : [
-            "étape 1 : ", 
-            "étape 2 : ", 
-            "étape 3 : ", 
-            "étape 4 : ", 
-            "étape 5 : ",
+            "Égouttez et émiettez le thon dans un grand saladier. Ajoutez les 2 œufs entiers.", 
+            "Mélangez. Ajoutez tout le reste des ingrédients. Mélangez.", 
+            "Faites chauffer une grande poêle anti adhésive avec de l'huile d'olive.", 
+            "Formez des petites boules de pâtes et disposez les dans votre poêle bien chaude, écrasez-les pour former des croquettes.", 
+            "Laissez bien cuire sur chaque face, de sorte que les croquettes croustillent bien des deux côtés.",
         ]
     }, 
     "Dahl de lentilles corail": {
         img : './img/Dahl_de_lentilles_corail.png',
         histoire : "Classique indémodable", 
         etapes : [
-            "étape 1 : ", 
-            "étape 2 : ", 
-            "étape 3 : ", 
-            "étape 4 : ", 
-            "étape 5 : ",
+            "Laver les tomates et les découper en dés. Peler les carottes, et les découper en fines rondelles", 
+            "Dans une casserole, verser les lentilles corail et couvrir d'eau. Porter à ébullition. Laisser cuire pendant 10 min environ, jusqu'à complète absorption de l'eau. Retire du feu et laisser reposer", 
+            "Dans une sauteuse, verser l'huile et chauffer. Y ajouter l'ail qui dorera pendant une petite minute. Verser ensuite les légumes et saupoudrer avec les épices. Ajouter enfin le concentré de tomate", 
+            "Verser le lait de coco et laisser mijoter environ 10 min. sans couvrir.", 
+            "Enfin, ajouter les lentilles et bien remuer le tout.",
         ]
     }, 
     "Tartiflette": {
