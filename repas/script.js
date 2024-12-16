@@ -70,7 +70,8 @@ var bdd = {
         histoire : "Ahahah un p'tit nouveau, il m'intrigue beaucoup et il serait le bienvenu tu ne pense pas ?", 
         etapes : [
             "Émincez le chorizo en fines lamelles. Portez le lait à ébullition avec une pointe de sel puis réservez. Cassez les oeufs et séparez les blancs des jaunes.", 
-            "Faites fondre le beurre dans une grande casserole, ajoutez la maizena et faites cuire pendant 2 min environ en mélangeant jusqu'à ce que le mélange commence tout juste à jaunir. Versez alors doucement le lait en fouettant vigoureusement et faites cuire, en mélangeant toujours au fouet jusqu'à ce que le mélange épaississe. Puis retirez du feu et incorporez, un à un, les jaunes d'oeufs; ajoutez le chorizo et réservez à chaleur ambiante.", 
+            "Faites fondre le beurre dans une grande casserole, ajoutez la maizena et faites cuire pendant 2 min environ en mélangeant jusqu'à ce que le mélange commence tout juste à jaunir.",
+            "Versez alors doucement le lait en fouettant vigoureusement et faites cuire, en mélangeant toujours au fouet jusqu'à ce que le mélange épaississe. Puis retirez du feu et incorporez, un à un, les jaunes d'oeufs; ajoutez le chorizo et réservez à chaleur ambiante.", 
             "Préchauffez le four th.6 (180°c).", 
             "Montez les blancs en neige très ferme avec une pointe de sel puis incorporez-les délicatement au mélange au Chorizo.", 
             "Farinez le fond et les parois des ramequins individuels jusqu'à l'extrême bord, remplissez-les de l'appareil à soufflé jusqu'aux bords puis enfournez pour 15 min de cuisson sans ouvrir le four. Servez aussitôt",
